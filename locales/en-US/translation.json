@@ -1,0 +1,9 @@
+{
+  "counter": "You clicked 1 time",
+  "counter_plural": "You clicked {{ count }} times",
+  "date": "Today is {{date, DATE_HUGE}}",
+  "description": {
+    "part1": "Edit <1>src/App.js</1> and save to reload",
+    "part2": "Hello World"
+  }
+}
