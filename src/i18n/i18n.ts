@@ -47,6 +47,9 @@ i18n
       backends: [LocalStorageBackend, LocizeBackend],
       backendOptions: [localStorageBackendOptions, locizeBackendOptions],
     },
+    // Load only one translation
+    // https://github.com/locize/i18next-locize-backend/issues/342
+    load: "currentOnly",
     // https://dev.to/adrai/how-to-properly-internationalize-a-react-application-using-i18next-3hdb#:~:text=thanks%20to%20the%20use%20of%20the%20savemissing%20functionality%2C%20new%20keys%20gets%20added%20to%20locize%20automatically%2C%20while%20developing%20the%20app.
     // Do not use with https://github.com/i18next/i18next-localstorage-backend#important-advice-for-the-usage-in-combination-with-savemissingupdatemissing
     // saveMissing: isDev,
